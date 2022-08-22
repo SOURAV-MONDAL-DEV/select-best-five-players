@@ -14,16 +14,18 @@
         }
         #b-text{
             top: 70%;
-
+        }
+        .bgc-black{
+          background-color: black;
         }
         
       </style>
   </head>
-  <body>
+  <body class="bgc-black">
     <header id="banar">
         <div id="b-text" class="text-white text-center position-absolute  start-50 translate-middle">
-            <h1 class="text-info">best v</h1>
-            <p class="text-success">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At eaque quam quos optio. Est, excepturi.</p>
+            <h1 class="text-info">Best <span class="text-warning">FIVE</span></h1>
+            <p class="text-success">Look, your favourite players are here! Select your favourite player for your favourite team. And win every match you want, YEY!! .</p>
         </div>
     </header>
     <main class=" container ">
@@ -31,62 +33,62 @@
             <!-- player card -->
             <div class="w-75 m-3">
                 <div class="card-group">
-                    <div class="card m-2">
+                    <div class="card m-2 bg-dark ">
                       <img src="images/Leo messi.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 class="card-title">Leo messi</h5>
-                        <p class="card-text"><small class="text-muted">36 Goals . 120 Assist</small></p>
-                        <button class="btn-primary" >select</button>
+                        <h5 id="messiTag" class="card-title text-white">Leo messi</h5>
+                        <p class="card-text"><small class="text-muted">90 Goals . 75 Assist</small></p>
+                        <button id="messiBtn" onclick="clickToSelect(messiTag)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
-                    <div class="card m-2">
+                    <div class="card m-2 bg-dark">
                       <img src="images/Ronaldo.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 class="card-title">Ronaldo</h5>
-                        <p class="card-text"><small class="text-muted">36 Goals . 120 Assist</small></p>
-                        <button class="btn-primary" >select</button>
+                        <h5 id="ronaldoTag" class="card-title text-white">Ronaldo</h5>
+                        <p class="card-text"><small class="text-muted">76 Goals . 55 Assist</small></p>
+                        <button id="RonaldoBtn" onclick="clickToSelect(ronaldoTag)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
-                    <div class="card m-2">
+                    <div class="card m-2 bg-dark">
                       <img src="images/Naimer jr.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 class="card-title">Naimer jr</h5>
-                        <p class="card-text"><small class="text-muted">36 Goals . 120 Assist</small></p>
-                        <button class="btn-primary" >select</button>
+                        <h5 id="naimerTag" class="card-title text-white">Naimer jr</h5>
+                        <p class="card-text"><small class="text-muted">85 Goals . 84 Assist</small></p>
+                        <button  id="naimerBtn" onclick="clickToSelect(naimerTag)"  class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>    
                 </div>
                 <div class="card-group">
-                    <div class="card m-2">
+                    <div class="card m-2 bg-dark">
                       <img src="images/Harry kane.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 class="card-title">Harry kane</h5>
-                        <p class="card-text"><small class="text-muted">36 Goals . 120 Assist</small></p>
-                        <button class="btn-primary" >select</button>
+                        <h5 id="harryTag" class="card-title text-white">Harry kane</h5>
+                        <p class="card-text"><small class="text-muted">36 Goals . 88 Assist</small></p>
+                        <button id="harryBtn" onclick="clickToSelect(harryTag)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
-                    <div class="card m-2">
+                    <div class="card m-2 bg-dark">
                       <img src="images/Karim Benzema.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 class="card-title">Karim Benzema</h5>
-                        <p class="card-text"><small class="text-muted">36 Goals . 120 Assist</small></p>
-                        <button class="btn-primary" >select</button>
+                        <h5 id="karimTag" class="card-title text-white">Karim Benzema</h5>
+                        <p class="card-text"><small class="text-muted">26 Goals . 125 Assist</small></p>
+                        <button id="karimBtn" onclick="clickToSelect(karimTag)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
-                    <div class="card m-2">
+                    <div class="card m-2 bg-dark">
                       <img src="images/salah.jpeg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 class="card-title">salah</h5>
-                        <p class="card-text"><small class="text-muted">36 Goals . 120 Assist</small></p>
-                        <button class="btn-primary" >select</button>
+                        <h5 id="salahTag" class="card-title text-white">salah</h5>
+                        <p class="card-text"><small class="text-muted">46 Goals . 20 Assist</small></p>
+                        <button id="salahBtn" onclick="clickToSelect(salahTag)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>    
                 </div>
             </div>
             <!-- SELECTION and COST -->
             <div class=" mt-4 mx-auto">
-                <div class="bg-dark h-50 p-3 mb-4">
-                    <h1 class=" text-primary">your selection</h1>
+                <div id="selection" class="text-white bg-dark h-50 p-3 mb-4">
+                    <h1 class=" text-primary">Your selection</h1>
                     <hr class="text-white">
                 </div>
                 <div class="bg-dark px-3 py-3">
@@ -103,6 +105,7 @@
             </div>
         </section>
     </main>
+    <script src="js-file/select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

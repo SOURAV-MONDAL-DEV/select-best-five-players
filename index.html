@@ -35,10 +35,10 @@
                 <div class="card-group">
                     <div class="card m-2 bg-dark ">
                       <img src="images/Leo messi.jpg" class="card-img-top" alt="...">
-                      <div class="card-body text-center">
+                      <div id="cardBox" class="card-body text-center">
                         <h5 id="messiTag" class="card-title text-white">Leo messi</h5>
                         <p class="card-text"><small class="text-muted">90 Goals . 75 Assist</small></p>
-                        <button id="messiBtn" onclick="clickToSelect(messiTag)" class="btn btn-primary w-50" >select</button>
+                        <button id="messiBtn" onclick="clickToSelect(messiTag, messiBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
                     <div class="card m-2 bg-dark">
@@ -46,7 +46,7 @@
                       <div class="card-body text-center">
                         <h5 id="ronaldoTag" class="card-title text-white">Ronaldo</h5>
                         <p class="card-text"><small class="text-muted">76 Goals . 55 Assist</small></p>
-                        <button id="RonaldoBtn" onclick="clickToSelect(ronaldoTag)" class="btn btn-primary w-50" >select</button>
+                        <button id="RonaldoBtn" onclick="clickToSelect(ronaldoTag, RonaldoBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
                     <div class="card m-2 bg-dark">
@@ -54,7 +54,7 @@
                       <div class="card-body text-center">
                         <h5 id="naimerTag" class="card-title text-white">Naimer jr</h5>
                         <p class="card-text"><small class="text-muted">85 Goals . 84 Assist</small></p>
-                        <button  id="naimerBtn" onclick="clickToSelect(naimerTag)"  class="btn btn-primary w-50" >select</button>
+                        <button  id="naimerBtn" onclick="clickToSelect(naimerTag, naimerBtn)"  class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>    
                 </div>
@@ -64,7 +64,7 @@
                       <div class="card-body text-center">
                         <h5 id="harryTag" class="card-title text-white">Harry kane</h5>
                         <p class="card-text"><small class="text-muted">36 Goals . 88 Assist</small></p>
-                        <button id="harryBtn" onclick="clickToSelect(harryTag)" class="btn btn-primary w-50" >select</button>
+                        <button id="harryBtn" onclick="clickToSelect(harryTag, harryBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
                     <div class="card m-2 bg-dark">
@@ -72,7 +72,7 @@
                       <div class="card-body text-center">
                         <h5 id="karimTag" class="card-title text-white">Karim Benzema</h5>
                         <p class="card-text"><small class="text-muted">26 Goals . 125 Assist</small></p>
-                        <button id="karimBtn" onclick="clickToSelect(karimTag)" class="btn btn-primary w-50" >select</button>
+                        <button id="karimBtn" onclick="clickToSelect(karimTag, karimBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
                     <div class="card m-2 bg-dark">
@@ -80,22 +80,25 @@
                       <div class="card-body text-center">
                         <h5 id="salahTag" class="card-title text-white">salah</h5>
                         <p class="card-text"><small class="text-muted">46 Goals . 20 Assist</small></p>
-                        <button id="salahBtn" onclick="clickToSelect(salahTag)" class="btn btn-primary w-50" >select</button>
+                        <button id="salahBtn" onclick="clickToSelect(salahTag, salahBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>    
                 </div>
             </div>
             <!-- SELECTION and COST -->
             <div class=" mt-4 mx-auto">
-                <div id="selection" class="text-white bg-dark h-50 p-3 mb-4">
+                <div class="text-white bg-dark h-50 p-3 mb-4">
                     <h1 class=" text-primary">Your selection</h1>
                     <hr class="text-white">
+                    <div id="selection" >
+
+                    </div>
                 </div>
                 <div class="bg-dark px-3 py-3">
                     <h1 class=" text-primary">Budget</h1>
                     <hr class="text-white">
-                    <p class="text-secondary">per Player <input type="number" name="" class="w-50" id="" placeholder="$ Amount"> </p>
-                    <button class=" btn btn-primary  w-75 ms-4 mx-auto">Calculate</button>
+                    <p class="text-secondary">per Player <input type="number" name="" class="w-50" id="perPlayerField" placeholder="$ Amount"> </p>
+                    <button id="calculateBtn" class=" btn btn-primary  w-75 ms-4 mx-auto">Calculate</button>
                     <p class="text-secondary mt-4">Player Expenses <span> 0</span></p>
                     <p class="text-secondary ">per Player <input type="number" name="" class="w-50" id="" placeholder="$ Amount"> </p>
                     <p class="text-secondary">per Player <input type="number" name="" class="w-50" id="" placeholder="$ Amount"> </p>

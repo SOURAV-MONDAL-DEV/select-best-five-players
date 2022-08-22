@@ -3,7 +3,6 @@
 function clickToSelect(nameTag, btnTag){
     const selection = document.getElementById('selection');
     let childCount = selection.childElementCount;
-    console.log(childCount);
 
     if(childCount < 5){
         let name = nameTag.innerText;
@@ -29,5 +28,14 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
 
     let playerCost = document.getElementById('playerCost');
     playerCost.innerText = childCount * perPlayerValue ;
-    console.log(playerCost.innerText);     
+    
+})
+
+
+document.getElementById('calculateTotal').addEventListener('click', function(){
+    const playerCost = document.getElementById('playerCost');
+    let playerCostString = playerCost.innerText;
+    let playerCostNumber = parseInt(playerCostString)
+    
+    console.log(playerCostNumber)
 })

@@ -36,6 +36,16 @@ document.getElementById('calculateTotal').addEventListener('click', function(){
     const playerCost = document.getElementById('playerCost');
     let playerCostString = playerCost.innerText;
     let playerCostNumber = parseInt(playerCostString)
+
+    const managerField = document.getElementById('managerField');
+    let managerValueString = managerField.value;
+    let managerValueNumber = parseInt(managerValueString);
     
-    console.log(playerCostNumber)
+    const coachField = document.getElementById('coachField');
+    let coachValueString = coachField.value;
+    let coachValueNumber = parseInt(coachValueString);
+
+    const totalCost = document.getElementById('total-cost');
+    totalCost.innerText = playerCostNumber + managerValueNumber + coachValueNumber;
+    // console.log(coachValueNumb)
 })

@@ -19,4 +19,15 @@ function clickToSelect(nameTag, btnTag){
 }
 
 
-    
+document.getElementById('calculateBtn').addEventListener('click', function(){
+    const selection = document.getElementById('selection');
+    let childCount = selection.childElementCount;
+
+    const perPlayerField = document.getElementById('perPlayerField');
+    let valueString = perPlayerField.value;
+    let perPlayerValue = parseInt(valueString);
+
+    let playerCost = document.getElementById('playerCost');
+    playerCost.innerText = childCount * perPlayerValue ;
+    console.log(playerCost.innerText);     
+})

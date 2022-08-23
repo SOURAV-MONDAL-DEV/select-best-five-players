@@ -1,4 +1,4 @@
-
+// The common function for player selection
 
 function clickToSelect(nameTag, btnTag){
     const selection = document.getElementById('selection');
@@ -6,7 +6,7 @@ function clickToSelect(nameTag, btnTag){
 
     if(childCount < 5){
         let name = nameTag.innerText;
-        let createEle = document.createElement('p');
+        let createEle = document.createElement('li');
         createEle.innerText = name;
         selection.append(createEle);
         btnTag.disabled = true
@@ -14,10 +14,10 @@ function clickToSelect(nameTag, btnTag){
     else{
         alert('You can not select more than 5 players')
     }
-
 }
 
 
+// calculate player cost---------
 document.getElementById('calculateBtn').addEventListener('click', function(){
     const selection = document.getElementById('selection');
     let childCount = selection.childElementCount;
@@ -27,11 +27,11 @@ document.getElementById('calculateBtn').addEventListener('click', function(){
     let perPlayerValue = parseInt(valueString);
 
     let playerCost = document.getElementById('playerCost');
-    playerCost.innerText = childCount * perPlayerValue ;
-    
+    playerCost.innerText = childCount * perPlayerValue ;   
 })
 
 
+// calculate total cost----------
 document.getElementById('calculateTotal').addEventListener('click', function(){
     const playerCost = document.getElementById('playerCost');
     let playerCostString = playerCost.innerText;
@@ -47,5 +47,4 @@ document.getElementById('calculateTotal').addEventListener('click', function(){
 
     const totalCost = document.getElementById('total-cost');
     totalCost.innerText = playerCostNumber + managerValueNumber + coachValueNumber;
-    // console.log(coachValueNumb)
 })

@@ -22,12 +22,16 @@
       </style>
   </head>
   <body class="bgc-black">
+    <!-- BANNER SECTION START -->
     <header id="banar">
         <div id="b-text" class="text-white text-center position-absolute  start-50 translate-middle">
             <h1 class="text-info">Best <span class="text-warning">FIVE</span></h1>
             <p class="text-white">Look, your favourite players are here! Select your favourite player for your favourite team. And win every match you want, YEY!! .</p>
-        </div>s
+        </div>
     </header>
+    <!-- BANNER SECTION END -->
+
+    <!-- MAIN SECTION START-->
     <main class=" container ">
         <section class="d-flex">
             <!-- player card -->
@@ -83,7 +87,7 @@
                       <button id="salahBtn" onclick="clickToSelect(salahTag, salahBtn)" class="btn btn-primary w-50" >select</button>
                     </div>
                   </div>    
-              </div>
+                </div>
                 <div class="card-group">
                     <div class="card m-2 bg-dark">
                       <img src="images/Mbappe.jpg" class="card-img-top" alt="...">
@@ -110,30 +114,30 @@
                       </div>
                     </div>    
                 </div>
-
             </div>
             
             <!-- SELECTION AND CALCULATE AREA -->
             <div class=" mt-4 mx-auto">  
                <!--PLAYER SELECTION BOX-->
                 <div class="text-white bg-dark h-25 p-3 mb-4">
-                    <h1 class=" text-primary">Your selection</h1>
+                    <h2 class=" text-info">Your selection</h2>
                     <hr class="text-white">
-                    <div id="selection" >
+                    <ol class="m-4 mt-5" id="selection" >
 
-                    </div>
+                    </ol>
+                    
                 </div>
                 <!-- CALCULATE COST AREA -->    
                 <div class="bg-dark px-3 py-3">
-                    <h1 class=" text-primary">Budget</h1>
+                    <h2 class=" text-info">Budget</h2>
                     <hr class="text-white">
-                    <p class="text-secondary">per Player $<input type="number" name="" class="w-50" id="perPlayerField" placeholder="$ Amount"> </p>
+                    <p class="text-secondary fw-semibold">per Player $<input type="number" name="" class="w-50" id="perPlayerField" placeholder="$ Amount"> </p>
                     <button id="calculateBtn" class=" btn btn-primary  w-75 ms-4 mx-auto">Calculate</button>
-                    <p class="text-secondary mt-4">Player Cost $ <span class="text-white" id="playerCost">0</span></p>
-                    <p class="text-secondary ">Manager <input type="number" name="" class="w-50" id="managerField" placeholder="$ Amount"> </p>
-                    <p class="text-secondary">Coach<input type="number" name="" class="w-50 ms-4" id="coachField" placeholder="$ Amount"> </p>
+                    <p class=" fs-5 text-secondary fw-semibold mt-4">Player Cost $ <span class="text-white" id="playerCost">0</span></p>
+                    <p class="text-secondary fw-semibold ">Manager <input type="number" name="" class="w-50" id="managerField" placeholder="$ Amount"> </p>
+                    <p class="text-secondary fw-semibold">Coach<input type="number" name="" class="w-50 ms-4" id="coachField" placeholder="$ Amount"> </p>
                     <button id="calculateTotal" class=" btn btn-primary  w-75 ms-4 mx-auto">Calculate Total</button>
-                    <p class=" text-end text-white mt-4 me-5">Total     $ <span id="total-cost" class="text-warning ms-2"> 0</span></p>
+                    <p class="fs-3 text-end text-white mt-4 me-5">Total     $ <span id="total-cost" class="text-warning ms-2"> 0</span></p>
                 </div>
             </div>
         </section>

@@ -34,9 +34,9 @@
             <div class="w-75 m-3">
                 <div class="card-group">
                     <div class="card m-2 bg-dark ">
-                      <img src="images/Leo messi.jpg" class="card-img-top" alt="...">
+                      <img src="images/Leo messi.png" class="card-img-top" alt="...">
                       <div id="cardBox" class="card-body text-center">
-                        <h5 id="messiTag" class="card-title text-white">Leo messi</h5>
+                        <h5 id="messiTag" class="card-title text-white">Lionel Messi</h5>
                         <p class="card-text"><small class="text-muted">90 Goals . 75 Assist</small></p>
                         <button id="messiBtn" onclick="clickToSelect(messiTag, messiBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
@@ -59,41 +59,71 @@
                     </div>    
                 </div>
                 <div class="card-group">
+                  <div class="card m-2 bg-dark">
+                    <img src="images/Harry kane.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 id="harryTag" class="card-title text-white">Harry kane</h5>
+                      <p class="card-text"><small class="text-muted">36 Goals . 88 Assist</small></p>
+                      <button id="harryBtn" onclick="clickToSelect(harryTag, harryBtn)" class="btn btn-primary w-50" >select</button>
+                    </div>
+                  </div>
+                  <div class="card m-2 bg-dark">
+                    <img src="images/Karim Benzema.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 id="karimTag" class="card-title text-white">Karim Benzema</h5>
+                      <p class="card-text"><small class="text-muted">26 Goals . 125 Assist</small></p>
+                      <button id="karimBtn" onclick="clickToSelect(karimTag, karimBtn)" class="btn btn-primary w-50" >select</button>
+                    </div>
+                  </div>
+                  <div class="card m-2 bg-dark">
+                    <img src="images/salah.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 id="salahTag" class="card-title text-white">MD Salah</h5>
+                      <p class="card-text"><small class="text-muted">46 Goals . 20 Assist</small></p>
+                      <button id="salahBtn" onclick="clickToSelect(salahTag, salahBtn)" class="btn btn-primary w-50" >select</button>
+                    </div>
+                  </div>    
+              </div>
+                <div class="card-group">
                     <div class="card m-2 bg-dark">
-                      <img src="images/Harry kane.jpg" class="card-img-top" alt="...">
+                      <img src="images/Mbappe.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 id="harryTag" class="card-title text-white">Harry kane</h5>
+                        <h5 id="MbappeTag" class="card-title text-white">Kylian Mbappe</h5>
                         <p class="card-text"><small class="text-muted">36 Goals . 88 Assist</small></p>
-                        <button id="harryBtn" onclick="clickToSelect(harryTag, harryBtn)" class="btn btn-primary w-50" >select</button>
+                        <button id="MbappeBtn" onclick="clickToSelect(MbappeTag, MbappeBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
                     <div class="card m-2 bg-dark">
-                      <img src="images/Karim Benzema.jpg" class="card-img-top" alt="...">
+                      <img src="images/Paul Pogba.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 id="karimTag" class="card-title text-white">Karim Benzema</h5>
+                        <h5 id="PaulTag" class="card-title text-white">Paul Pogba</h5>
                         <p class="card-text"><small class="text-muted">26 Goals . 125 Assist</small></p>
-                        <button id="karimBtn" onclick="clickToSelect(karimTag, karimBtn)" class="btn btn-primary w-50" >select</button>
+                        <button id="PaulBtn" onclick="clickToSelect(PaulTag, PaulBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>
                     <div class="card m-2 bg-dark">
-                      <img src="images/salah.jpeg" class="card-img-top" alt="...">
+                      <img src="images/Robart.jpg" class="card-img-top" alt="...">
                       <div class="card-body text-center">
-                        <h5 id="salahTag" class="card-title text-white">salah</h5>
+                        <h5 id="RobartTag" class="card-title text-white">Robart</h5>
                         <p class="card-text"><small class="text-muted">46 Goals . 20 Assist</small></p>
-                        <button id="salahBtn" onclick="clickToSelect(salahTag, salahBtn)" class="btn btn-primary w-50" >select</button>
+                        <button id="RobartBtn" onclick="clickToSelect(RobartTag, RobartBtn)" class="btn btn-primary w-50" >select</button>
                       </div>
                     </div>    
                 </div>
+
             </div>
-            <!-- SELECTION and COST -->
-            <div class=" mt-4 mx-auto">
-                <div class="text-white bg-dark h-50 p-3 mb-4">
+            
+            <!-- SELECTION AND CALCULATE AREA -->
+            <div class=" mt-4 mx-auto">  
+               <!--PLAYER SELECTION BOX-->
+                <div class="text-white bg-dark h-25 p-3 mb-4">
                     <h1 class=" text-primary">Your selection</h1>
                     <hr class="text-white">
                     <div id="selection" >
 
                     </div>
                 </div>
+                <!-- CALCULATE COST AREA -->    
                 <div class="bg-dark px-3 py-3">
                     <h1 class=" text-primary">Budget</h1>
                     <hr class="text-white">
